@@ -8,7 +8,7 @@ import (
 	perceptron "github.com/thewizardplusplus/go-perceptron"
 )
 
-var _ Interface[float64] = (*Generator[float64])(nil)
+var _ Interface[float64] = Generator[float64]{}
 
 type Generator[ValueType perceptron.ValueConstraint] struct {
 	innerGenerator rand.Rand
