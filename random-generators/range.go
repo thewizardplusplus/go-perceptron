@@ -12,7 +12,3 @@ type Range[ValueType perceptron.ValueConstraint] struct {
 func (r Range[ValueType]) Len() ValueType {
 	return r.Max - r.Min
 }
-
-func (r Range[ValueType]) LenAsInt64() int64 {
-	return int64(r.Max) - int64(r.Min)
-}

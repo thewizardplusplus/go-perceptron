@@ -5,5 +5,5 @@ import (
 )
 
 type ValueConstraint interface {
-	constraints.Signed | constraints.Float
+	constraints.Float
 }
