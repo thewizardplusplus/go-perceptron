@@ -1,0 +1,14 @@
+force-file-write: true
+dir: "mocks/{{ .SrcPackagePath }}"
+filename: "mock_{{ .InterfaceName }}.go"
+pkgname: "{{ .SrcPackageName }}Mocks"
+structname: "Mock{{ .InterfaceName }}"
+template: testify
+formatter: "goimports"
+packages:
+  github.com/thewizardplusplus/go-perceptron:
+    interfaces:
+      WeightInitializer:
+  github.com/thewizardplusplus/go-perceptron/random-generators:
+    interfaces:
+      Interface:

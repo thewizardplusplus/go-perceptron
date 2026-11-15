@@ -7,4 +7,7 @@ require (
 	golang.org/x/exp v0.0.0-20260209203927-2842357ff358
 )
 
-require go.yaml.in/yaml/v3 v3.0.5 // indirect
+require (
+	github.com/stretchr/objx v0.5.3 // indirect
+	go.yaml.in/yaml/v3 v3.0.5 // indirect
+)
